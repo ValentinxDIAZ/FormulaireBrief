@@ -7,27 +7,135 @@
     <title>Formulaire</title>
 </head>
 <body>
-    <h2>Formulaire d'inscription</h2>
+    <h2>Formulaire</h2>
     <fieldset >
         <legend>État civil</legend>
 
-                <label for="1">Veuillez entrer votre prénom : </label>
-                <input type="text">
+                <label for="21">Veuillez entrer votre prénom : </label>
+                <input type="text" size="7" id="21">
 
     <p></p>
 
-                <label for="1">Veuillez entre votre nom de famille : </label>
-                <input type="text">
+                <label for="22">Veuillez entrer votre nom de famille : </label>
+                <input type="text" size="7" id="22">
     
     <p></p>
 
-    <input type="submit" value="Valider votre prénom et nom">
+                <label for="23">Veuillez entrer votre âge : </label>
+                <input type="text" size="1" id="23">
+
+    <p></p>
+
+                <label for="24">Veuillez entrer votre date de naissance : </label>
+                <input type="text" size="6" id="24">
+
+    <p></p>
+
+                <select name="sexe" id="pet-select">
+                    <option value="">--Selectionner votre sexe--
+
+                </option>
+                    <option value="homme">Homme</option>
+                    <option value="Femme">Femme</option>
+                </select>
+
+    <p></p>
+
+
+    <input type="submit" value="Valider vos informations">
     
     </fieldset>     
         <fieldset>
             <legend>Vos coordonnées</legend>
             
-                <label for="1">Votre adresse e-mail</label>           
+                <label for="emailAddress">Votre adresse e-mail : </label>    
+                <input type="email" id="emailAddress" placeholder="valentin@exemple.fr">   
+    <p></p>
+                <label for="2">Adresse postable : </label>    
+                <input type="text" id="2">      
+    <p></p>
+                <label for="3">Code postal : </label>    
+                <input type="text" id="3" required
+                maxlength="5" size="3">  
+
+    <p></p>                           
+
+                <label for="4">Ville : </label>
+                <input type="text" id="4" size="9">
+
+     <p></p>                           
+ 
+     <input type="submit" value="Valider vos informations">
         </fieldset>
+        
+        <fieldset>
+            <legend>Informations Additionnels</legend>    
+
+                <select name="metier" id="metier-select">
+                <option >--Selectionner votre métier excercé-- 
+                </option>
+                
+                <option value="developpeurfrontend">Développeur front-end</option>
+                <option value="Designerweb">Designer Web</option>
+                <option value="Comptable">Comptable</option>
+                <option value="Dataanalyst">Data Analyst</option>
+                <option value="Gamedesigner">Game designer</option>
+                <option value="autre">Autre</option>
+            </select>
+        
+
+    <p></p>
+
+    <select name="nationalite" id="national-select">
+        <option>--Selectionner votre nationalité-- 
+        </option>
+
+        <option value="Française">Française</option>
+        <option value="Japonaise">Japonaise</option>
+        <option value="Portugaise">Portugaise</option>
+        <option value="Marocaine">Marocaine</option>
+        <option value="Canadienne">Canadienne</option>
+        <option value="Belge">Belge</option>
+        <option value="Espagnole">Espagnole</option>
+        <option value="Sud-coréenne">Sud-coréenne</option>
+    </select>
+
+
+    <p></p>
+    
+            <label for="13">Pays de naissance</label>
+            <input type="text" id="13">
+
+    <p></p>
+            
+            <label for="14">Numéro de sécuité social</label>
+            <input type="text" id="14" name="name" required
+            maxlength="13" size="13">
+
+    <p></p>
+
+            <label for="15">Numéro de passeport</label>
+            <input type="text" id="15" required
+            maxlength="9" size="9">
+            
+    <p></p> 
+             
+            <label for="16">Date délivrance du passport</label>
+            <input type="date" id="16" size="4">
+
+    <p></p>
+
+            <label for="17">Date de validité du passport</label>
+            <input type="date" id="17" size="4">
+
+    <p></p>
+    
+    <input type="submit" value="Valider vos informations">   
+       </fieldset>
+
+       <p> </p>
+
+       <input type="submit" value="Valider le formulaire">  
+
 </body>
 </html>
